@@ -1,0 +1,14 @@
+<div class="col s12 m3">
+  <div class="card grey darken-3">
+    <div class="card-content white-text">
+      <span class="card-title">
+        <%= @product[:name] %>
+      </span>
+      <p><%= @product[:description] %></p>
+      <p>$ <%= @product[:base_price] %></p>
+    </div>
+    <div class="card-action">
+      <a href="" id='buy_button' data-id=<%= @product[:id] %>>Buy</a>
+    </div>
+  </div>
+</div>
